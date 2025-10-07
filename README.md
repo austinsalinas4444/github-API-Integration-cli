@@ -31,13 +31,22 @@ Synced 2697 issues from pallets/flask
 
 ## Setup
 
-**Clone this repository**
    ```bash
+# Clone this repository
    git clone https://github.com/austinsalinas4444/github-API-Integration-cli.git
    cd github-API-Integration-cli
-```
-Create virtual envrionment
- ```bash
+
+# Create virtual envrionment
 python3 -m venv .venv
 source .venv/bin/activate
+
+#Install dependencies
+pip install -r requirements.txt
+
+#Create a .env file in the project and add your Github token
+GITHUB_TOKEN=your_personal_access_token_here
+
+#Run the script
+python github_cli.py --owner pallets --repo flask
+
 ```
